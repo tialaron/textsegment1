@@ -6,8 +6,8 @@ import streamlit as st
 cwd = os.getcwd()
 st.write(cwd)
 
-spisok_doc = os.listdir('/original_docs/')
-
+spisok_doc = os.listdir('/app/textsegment1/original_docs/')
+st.write(spisok_doc)
 st.set_page_config(layout='wide')
 st.header('Рассмотрим работу нейронной сети по сегментации договоров.')
 
