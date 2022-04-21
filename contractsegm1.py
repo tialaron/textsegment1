@@ -10,7 +10,7 @@ spisok_doc = os.listdir('/app/textsegment1/original_docs/')
 
 st.set_page_config(layout='wide')
 st.header('Рассмотрим работу нейронной сети по сегментации договоров.')
-
+st.write('Обучение нейронной сети проводилось на старой базе типовых договоров, поэтому точность может быть хуже. Для улучшения точности нужна новая база с правильной разметкой')
 def doc_lines(textor_any):
   counter_str = 0
   for i in textor_any:
@@ -74,6 +74,7 @@ with col3:
       else:
         st.write(all_doc[j])
 
-
+st.write('Ссылка на ноутбук для обучения сети')
+st.write('https://colab.research.google.com/drive/1uyA2iJPC0QPIj4FAqs9irSmVh6sPXq7r?usp=sharing')
 
 
