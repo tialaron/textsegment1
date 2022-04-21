@@ -2,7 +2,7 @@ import os
 
 import streamlit as st
 
-spisok_doc = os.listdir('textsegment1/original_docs/')
+spisok_doc = os.listdir('/original_docs/')
 
 st.set_page_config(layout='wide')
 st.header('Рассмотрим работу нейронной сети по сегментации договоров.')
@@ -21,7 +21,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
   with st.container():
     st.subheader('Оригинал договора')
-    filename1 = 'textsegment1/original_docs/'+spisok_doc[counter2]
+    filename1 = '/original_docs/'+spisok_doc[counter2]
     f = open(filename1 ,'r',encoding="utf8")
     textor = f.read()
     st.write(textor)
@@ -41,7 +41,7 @@ with col2:
 with col3:
   with st.container():
     st.subheader('Договор обработанный нейронной сетью.')
-    filename2 = 'textsegment1/original_docs/'+spisok_doc[counter2]
+    filename2 = '/original_docs/'+spisok_doc[counter2]
     f2 = open(filename2 , 'r', encoding="utf8")
     textor2 = f2.read()
     #st.write(textor2)
