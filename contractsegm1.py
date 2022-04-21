@@ -19,7 +19,7 @@ def doc_lines(textor_any):
   return counter_str
 
 
-counter2 = st.slider('Выберите номер документа для обработки',0,4,1)
+counter2 = st.slider('Выберите номер документа для обработки с помощью слайдера',0,4,1)
 
 col1, col2, col3 = st.columns(3)
 with col1:
