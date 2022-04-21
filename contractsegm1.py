@@ -2,6 +2,10 @@ import os
 
 import streamlit as st
 
+
+cwd = os.getcwd()
+print (cwd)
+
 spisok_doc = os.listdir('/original_docs/')
 
 st.set_page_config(layout='wide')
