@@ -2,7 +2,7 @@ import os
 
 import streamlit as st
 
-spisok_doc = os.listdir('\original_docs\')
+spisok_doc = os.listdir('textsegment1/original_docs/')
 
 st.set_page_config(layout='wide')
 st.header('Рассмотрим работу нейронной сети по сегментации договоров.')
