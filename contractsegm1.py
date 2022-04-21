@@ -4,7 +4,7 @@ import streamlit as st
 
 
 cwd = os.getcwd()
-print (cwd)
+st.write(cwd)
 
 spisok_doc = os.listdir('/original_docs/')
 
