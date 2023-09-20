@@ -25,7 +25,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
   with st.container():
     st.subheader('Оригинал договора')
-    filename1 = '/app/textsegment1/original_docs/'+spisok_doc[counter2]
+    filename1 = 'original_docs/'+spisok_doc[counter2]
     f = open(filename1 ,'r',encoding="utf8")
     textor = f.read()
     st.write(textor)
